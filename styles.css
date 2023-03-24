@@ -1,0 +1,9 @@
+/* Default reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210 25% 80%);
+}
