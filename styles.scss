@@ -59,6 +59,7 @@ body {
     inline-size: 300px;
     block-size: 300px;
     z-index: 6;
+    // Penguin head
     &__head {
         background: linear-gradient(45deg, gray, rgb(239, 240, 228));
         block-size: 45%;
@@ -67,6 +68,87 @@ body {
         top: 10%;
         left: 25%;
         z-index: 1;
+        // Penguin face
+        .face {
+            inline-size: 60%;
+            block-size: 70%;
+            background: whitesmoke;
+            top: 15%;
+            border-radius: 70% 70% 60% 60%;
+        }
+        .face.left {
+            left: 5%;
+        }
+        .face.right {
+            right: 5%;
+        }
+        // Penguin eyes
+        .eye {
+            inline-size: 15%;
+            block-size: 17%;
+            border-radius: 50%;
+            background-color: black;
+            top: 45%;
+            .eyelid {
+                inline-size: 150%;
+                block-size: 100%;
+                background-color: whitesmoke;
+                top: 25%;
+                left: -23%;
+                border-radius: 50%;
+
+            }
+        }
+        .eye.left{
+            left: 25%;
+        }
+        .eye.right{
+            right: 25%;
+        }
+        // Penguin blush
+        .blush {
+            inline-size: 15%;
+            block-size: 10%;
+            background-color: pink;
+            border-radius: 50%;
+            top: 65%;
+        }
+        .blush.left {
+            left: 15%;
+        }
+        .blush.right {
+            right: 15%;
+        }
+        // Penguin beak
+        .beak {
+            block-size: 10%;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .beak.top {
+            inline-size: 20%;
+            top: 60%;
+            left: 40%;
+        }
+        .beak.bottom {
+            width: 16%;
+            top: 65%;
+            left: 42%;
+        }
+    }
+    // Penguin shirt
+    &__shirt {
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
+        top: 190px;
+        left: 127.5px;
+        z-index: 1;
+        & div {
+            font-weight: normal;
+            left: 12px;
+
+        }
     }
     &__body {
         inline-size: 53%;
@@ -75,5 +157,16 @@ body {
         background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
         top: 40%;
         left: 23.5%;
+        &::before {
+            content: "";
+            position: absolute;
+            inline-size: 50%;
+            block-size: 45%;
+            background-color: grey;
+            top: 10%;
+            left: 25%;
+            border-radius: 0% 0% 100% 100%;
+            opacity: 70%;
+        }
     }
 }

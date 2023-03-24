@@ -73,6 +73,80 @@ body {
   left: 25%;
   z-index: 1;
 }
+.penguin__head .face {
+  inline-size: 60%;
+  block-size: 70%;
+  background: whitesmoke;
+  top: 15%;
+  border-radius: 70% 70% 60% 60%;
+}
+.penguin__head .face.left {
+  left: 5%;
+}
+.penguin__head .face.right {
+  right: 5%;
+}
+.penguin__head .eye {
+  inline-size: 15%;
+  block-size: 17%;
+  border-radius: 50%;
+  background-color: black;
+  top: 45%;
+}
+.penguin__head .eye .eyelid {
+  inline-size: 150%;
+  block-size: 100%;
+  background-color: whitesmoke;
+  top: 25%;
+  left: -23%;
+  border-radius: 50%;
+}
+.penguin__head .eye.left {
+  left: 25%;
+}
+.penguin__head .eye.right {
+  right: 25%;
+}
+.penguin__head .blush {
+  inline-size: 15%;
+  block-size: 10%;
+  background-color: pink;
+  border-radius: 50%;
+  top: 65%;
+}
+.penguin__head .blush.left {
+  left: 15%;
+}
+.penguin__head .blush.right {
+  right: 15%;
+}
+.penguin__head .beak {
+  block-size: 10%;
+  background-color: orange;
+  border-radius: 50%;
+}
+.penguin__head .beak.top {
+  inline-size: 20%;
+  top: 60%;
+  left: 40%;
+}
+.penguin__head .beak.bottom {
+  width: 16%;
+  top: 65%;
+  left: 42%;
+}
+.penguin__shirt {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  top: 190px;
+  left: 127.5px;
+  z-index: 1;
+}
+.penguin__shirt div {
+  font-weight: normal;
+  left: 12px;
+}
 .penguin__body {
   inline-size: 53%;
   block-size: 45%;
@@ -80,4 +154,15 @@ body {
   background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
   top: 40%;
   left: 23.5%;
+}
+.penguin__body::before {
+  content: "";
+  position: absolute;
+  inline-size: 50%;
+  block-size: 45%;
+  background-color: grey;
+  top: 10%;
+  left: 25%;
+  border-radius: 0% 0% 100% 100%;
+  opacity: 70%;
 }/*# sourceMappingURL=styles.css.map */
