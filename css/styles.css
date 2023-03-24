@@ -171,7 +171,7 @@ body {
   top: 40%;
   left: 23.5%;
 }
-.penguin__body ::before {
+.penguin__body::before {
   content: "";
   position: absolute;
   inline-size: 50%;
