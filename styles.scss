@@ -1,0 +1,68 @@
+/* Default reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    min-block-size: 100vh;
+    inline-size: 100%;;
+    overflow: hidden;
+}
+// Background styles
+.left-mountain {
+    position: absolute;
+    z-index: 2;
+    transform: skew(0deg, 44deg);
+    block-size: 300px;
+    inline-size: 300px;
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    margin-top: 100px;
+}
+.back-mountain {
+    position: absolute;
+    z-index: 1;
+    block-size: 300px;
+    inline-size: 300px;
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(215, 255, 255));
+    transform: rotate(45deg);
+    left: 20px;
+    top: 175px;
+}
+.sun {
+    position: absolute;
+    inline-size: 200px;
+    block-size: 200px;
+    background: linear-gradient(75deg, rgb(199, 236, 88), rgb(254, 122, 28));;
+    border-radius: 50%;
+    top: 40px;
+    left: 40px;
+    
+}
+.ground {
+    inline-size: 100%;
+    block-size: 400px;
+    background: linear-gradient(45deg,rgb(114, 143, 173), rgb(33, 127, 222));
+    z-index: 3;
+    position: absolute;
+    margin-top: -85px;
+}
+// Penguin styles
+.penguin {
+    position: relative;
+    margin-inline: auto;
+    margin-top: 75px;
+    inline-size: 300px;
+    block-size: 300px;
+    z-index: 6;
+    &__head {
+        background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+        block-size: 45%;
+        inline-size: 50%;
+        border-radius: 70% 70% 65% 65%;
+    }
+    &__body {
+
+    }
+}
